@@ -1,0 +1,53 @@
+{
+  "name": "@wassname2/pi-record-journal",
+  "version": "0.1.0",
+  "description": "Optionally save long Pi user messages to a Markdown journal",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "journal",
+    "human-in-the-loop"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.2",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wassname/pi-record-journal.git"
+  },
+  "homepage": "https://github.com/wassname/pi-record-journal#readme",
+  "bugs": {
+    "url": "https://github.com/wassname/pi-record-journal/issues"
+  }
+}
