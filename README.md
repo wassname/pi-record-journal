@@ -4,7 +4,8 @@
 Save your long Pi messages to a Markdown journal, per session, only with consent.
 
 ```bash
-pi install /absolute/path/to/pi-record-journal   # not yet on npm
+pi install npm:@wassname2/pi-record-journal
+# or: pi install git:github.com/wassname/pi-record-journal
 ```
 
 ```text
