@@ -128,7 +128,7 @@ export default function (pi: ExtensionAPI) {
 
 	pi.on("input", async (event, ctx) => {
 		if (event.source === "extension") return { action: "continue" };
-		// pi-annotated-journal sections are mostly quoted Pi output and already logged there; keep only the user's own text.
+		// pi-annotate-md (/annotate) sections are mostly quoted Pi output and already logged there; keep only the user's own text.
 		const text = event.text.split(/^## Annotate (?:user|assistant) message$/m)[0].trimEnd();
 		const unquotedLines = text.split(/\r?\n/).filter((line) => {
 			const trimmed = line.trim();

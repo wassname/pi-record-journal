@@ -28,7 +28,7 @@ Saved by pi-record-journal · session `01a1e6d6-…`
 > third line
 ```
 
-Sections that `/annotate` from `pi-annotated-journal` adds (`## Annotate assistant message` and everything after) are not saved: they are mostly Pi's own text and are already in `.pi/last_msg_log.md`. Text you typed before them is saved.
+Sections that `/annotate` from [pi-annotate-md](https://github.com/wassname/pi-annotate-md) adds (`## Annotate assistant message` and everything after) are not saved: they are mostly Pi's own text and are already in `.pi/annotate_log.md`. Text you typed before them is saved.
 
 The choice is stored in the session and survives `/reload` and resume. New sessions and forks start off.
 
